@@ -1,0 +1,151 @@
+<!--
+5) User Story: I can click on a link that will take me to an external website with further information on the topic.
+
+You can get feedback on your project from fellow campers by sharing it in our Code Review Chatroom. You can also share it on Twitter and your city's Campsite (on Facebook).
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elon Musk - A Tribute</title>
+    <!-- Google's jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+    <style>
+    @import url(style.css);
+    </style>
+</head>
+
+<body>
+    <!-- Required for grids in Bootstrap. Provides padding around everything it contains. container-fluid would force content to take up the width of the page, used sparingly. -->
+    <div class="page-header primary-text center-text navbar-fixed-top" id="head">
+        <!-- Adds space around and enlarge text, also provides underline -->
+        <h1 class="text-primary text-center" id="main-text">Elon Musk</h1>
+        <hr/>
+        <div class="container-fluid">
+            <div class="row" id="header-row">
+                <ul>
+                    <li class="col-xs-4" id="header-list">Innovator</li>
+                    <li class="col-xs-4" id="header-list">Visionary</li>
+                    <li class="col-xs-4" id="header-list">Genius</li>
+                </ul>
+            </div>
+            </hr>
+        </div>
+    </div>
+    <div class="container" id="image-container">
+        <!-- -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="thumbnail" id="splash">
+                    <img src="images/musk-risk.jpg" class="img-responsive" id="main-image" alt="Photograph of Elon Musk">
+                    <div class="caption" id="thumbnail-caption">
+                        <h5 class="text-primary text-center" id="para">Elon is one of the greatest innovators to ever live. He has worked fervently and relentlessly to advance our species and protect our planet. Pushing the boundaries of technology and what is thought possible, transforming failures into triumphs, and persisting through doubt and ridicule, Musk has transcended the status of personal hero to become a living legend.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="timeline">
+        <h2 id="timeline-header">Timeline</h2>
+        <hr/>
+        <figure class="figure" id="timeline-image">
+            <img src="images/musk.jpg" class="figure-img img-fluid img-rounded img-respnsive">
+        </figure>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul id="timeline">
+                    <li><strong>1971:</strong> Elon is born in South Africa</li>
+                    <li><strong>1979:</strong> At just eight years old, Elon reads ten hours a day and has read the entire Encyclopedia Brittanica.</li>
+                    <li><strong>1983:</strong> At only twelve years of age, Elon codes and sells Blastar, his own video game.</li>
+                    <li><strong>1985:</strong> Elon concludes that his purpose in life is to save humanity</li>
+                    <li><strong>1988:</strong> Elon moves to Canada.</li>
+                    <li><strong>1989:</strong> Starts college at Queen's University in Ontario</li>
+                    <li><strong>1991:</strong> Transfers to the University of Pennsylvania</li>
+                    <li><strong>1994:</strong> Elon graduates from the University of Pennsylvania with degrees in both Economics and Physics.</li>
+                    <li><strong>1995:</strong> Musk begins his PhD program in Applied Physics at Stanford University, but soon leaves to pursue passions in industry.</li>
+                    <li><strong>1995:</strong> Elon starts his first company - Zip2.</li>
+                    <li><strong>1999:</strong> Zip2 sells for $22 million dollars. Musk then starts online banking company X.com.</li>
+                    <li><strong>2000:</strong> Merges X.com with Confinity, thus creating Paypal</li>
+                    <li><strong>2000:</strong> Elon marries his college girlfriend, Justine.</li>
+                    <li><strong>2002:</strong> Musk starts SpaceX. In same year, receives $250 million for sale of Paypal.</li>
+                    <li><strong>2004:</strong> Invests in an co-founds Tesla motors, the world's first all electric vehicle.</li>
+                    <li><strong>2006:</strong> SpaceX wins NASA contracts to deliver cargo to the International Space Station</li>
+                    <li><strong>2006:</strong> Invests in an co-founds SolarCity</li>
+                    <li><strong>2008:</strong> Musk divorces Justine. Successfully launches rocket into low earth orbit after three failed attempts. Wins NASA contract for $1.6 billion dollars.</li>
+                    <li><strong>2010:</strong> Elon marries Talulah</li>
+                    <li><strong>2012:</strong> Elon divorces Talulah. The Dragon capsule successfully docks with the International Space Station.</li>
+                    <li><strong>2013:</strong> Elon remarries Talulah. Elon also unveils plans to build Hyperloop.</li>
+                    <li><strong>2015:</strong> Successfully lands rocket onto platform post orbit. A first in history.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="slide-container">
+            <div class="header">
+                <h1>Elon's Legacy</h1>
+                <hr/>
+            </div>
+            <div id="slider" class="img-responsive">
+                <ul class="slides">
+                    <li class="slide hvr-back-pulse">
+                        <a href="http://www.spacex.com/" target="_blank"><img src="images/spacex.jpg" class="img-responsive hvr-glow" /></a>
+                    </li>
+                    <li class="slide">
+                        <a href="https://www.teslamotors.com/" target="_blank"><img src="images/tesla.jpg" class="img-responsive hvr-glow" /></a>
+                    </li>
+                    <li class="slide">
+                        <a href="http://hyperlooptech.com/" target="_blank"><img src="images/hyperloop.jpg" class="img-responsive hvr-glow"></a>
+                    </li>
+                    <li class="slide">
+                        <a href="http://www.solarcity.com/" target="_blank"><img src="images/solar.jpg" class="img-responsive hvr-glow" /></a>
+                    </li>
+                    <li class="slide">
+                        <a href="https://openai.com/blog/introducing-openai/" target="_blank"><img src="images/openai.jpg" class="img-responsive hvr-glow" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="landing">
+            <h2>Historic Landing of Falcon 9 Rocket</h2>
+            <hr/>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="853" height="480" align: "middle" src="https://www.youtube.com/embed/ZCBE8ocOkAQ?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <p>Elon musk is one of the greatest inspirations to mankind. He embodies what truly driven beings can be capable of. Despite a rough childhood and difficult circumstances, Elon has never stopped pushing himself, never given up on his dreams, and never stopped learning.</p>
+            <p>There is not a fiber within Elon which would accept that something can not be accomplished, or that an idea is too big for our species' current place in time. Elon has never seemed to question his purpose in life. From an early age Elon was different, choosing to read books in isolation for hours on end while other children played amongst each other without worry.
+            <p>Elon developed a vision for improving humanity from a very early age. He has never taken his focus off of that vision. A born problem solver, Elon continues to redefine what it means to be an engineer, an entrepreneur, and an innovator.</p>
+            <p>One impossibility after another has been shattered by Musk's reserve. It was believed that reliance on oil was a fact of life which could not be avoided for many years to come. Elon has proven otherwise, creating the worlds first completely electric vehicle. Additionally, with the affordability of the Tesla Model III, fully electric vehicles will take the world by storm in the very near future, with them bringing the oil industry to its knees. Elon, despite nearly going bankrupt, persevered and found a way to make his vision of Tesla a reality. His success in the car industry will also have a direct and profound impact on addressing global warming issues via carbon emissions. Every human that is financially capable should invest in a Tesla.</p>
+            <p>Another claimed <em>"impossibility"</em> was that rockets and space operations were too complex and expensive to be handled by a privatized, non-governmental entity. Musk has done amazing things on his journey to prove otherwise, things that will change mankind forever. After again nearing failure and bankruptcy, Elon and SpaceX rose from near ashes to win government contracts and deliver cargo to the ISS. Since then, SpaceX has expanded into creating unbelievable technologies never thought possible, such as re-landing and re-using a rocket. Elon and SpaceX successfully did what many claimed to be impossible when they landed the Falcon 9 rocket on just the <em>fourth</em> attempt at doing so, <em>post</em> obrit. Musk also wants to begin the colonization and terraforming of Mars, and while many scoff at such an idea, there is no doubt Elon will give it his all.
+            <div class="container" id="mars-image">
+                <a href="http://www.popularmechanics.com/space/moon-mars/a19189/elon-musk-ready-to-announce-mars-plans-this-fall/" target="_blank"><img src="images/mars.jpg" class="img-responsive center-block" /></a>
+            </div>
+            <p>Elon Musk has, and will continue to push the boundaries and capabilities of our species. There is no doubt that our generation is in the company of a legendary innovator, and appreciation for Elon's accomplishments will only become more profound as time goes on. The impact that one person can make in this world has been shown in pulses througout history, and Elon Musk will undoubtedly join the ranks of the amazing minds which have graced our kind. It is people like Elon that give our society inspiration. In a time where we no longer have faith in our leaders, where being a dreamer is shunned, and where pushing the limits of our comfort zone is contraindicated by society, we <strong><em>need</em></strong> people like Elon. We should hope that our children look up to and are inspired by individuals like him. I hope that Elon continues his relentless innovation, and if I am lucky enough to step foot on Mars in my lifetime, it is to Elon and the men and women under him which I will owe my eternal gratitude, for many men can dream, but Elon Musk renders dreams into reality. For that, he is my personal hero.
+        </div>
+        <div class="container-fluid">
+            <h4>For Further Information About Elon Musk: </h4>
+            <div class="row" id="more-info">
+                <div class="col-xs-6">Read Elon's <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">Wikipedia</a> Page
+                </div>
+                <div class="col-xs-6">Follow Elon on <a href="https://twitter.com/elonmusk" target="_blank">Twitter</a></div>
+            </div>
+        </div>
+        <div class="conainer-fluid">
+            <p id="hire-me">Like my style? Hire me! <a href="https://www.linkedin.com/in/rick-mottola-76393a119" target="_blank"><i class="fa fa-linkedin-square glyphs" aria-hidden="true"></i></a>
+                <a href="https://github.com/mottola" target="_blank"><i class="fa fa-github glyphs" aria-hidden="true"></i></a>
+            </p>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
